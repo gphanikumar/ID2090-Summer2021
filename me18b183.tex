@@ -1,1 +1,106 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
+\usepackage{fullpage} % changes the margin
+\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[fleqn]{amsmath}
+\usepackage{amssymb,amsthm}  % assumes amsmath package installed
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usepackage{verbatim}
+\usepackage[numbered]{mcode}
+\usepackage{float}
+\usepackage{tikz}
+    \usetikzlibrary{shapes,arrows}
+    \usetikzlibrary{arrows,calc,positioning}
 
+    \tikzset{
+        block/.style = {draw, rectangle,
+            minimum height=1cm,
+            minimum width=1.5cm},
+        input/.style = {coordinate,node distance=1cm},
+        output/.style = {coordinate,node distance=4cm},
+        arrow/.style={draw, -latex,node distance=2cm},
+        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+        sum/.style = {draw, circle, node distance=1cm},
+    }
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+    
+\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
+
+\newenvironment{problem}[2][Problem]
+    { \begin{mdframed}[backgroundcolor=gray!20] \textbf{#1 #2} \\}
+    {  \end{mdframed}}
+
+% Define solution environment
+\newenvironment{solution}
+    {\textbf{\textit{Solution:}}}
+    {}
+
+\renewcommand{\qed}{\quad\qedsymbol}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\large\textbf{SHINDE SHUBHAM SUNIL} \hfill \textbf{ASSIGNMENT \#2}   \\
+\textbf{smail:} me18b183@smail.iitm.ac.in \hfill \textbf{Roll No.:} ME18B183 \\
+\normalsize\textbf {Course:} ID2090 - Introduction to Scientific Computing \hfill \textbf{Semester:} SUMMER 2021 \\
+\textbf{Instructor:} Prof. Gandham Phanikumar \hfill \textbf{Due Date:} $11^{th}$ July, 2021 \\
+\noindent\rule{7in}{2.5pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{problem}{1}
+Write a script that generates a backup filename need to be created by a program with a unique name containing the time stamp when the backup was invoked. Run the script couple of times in quick succession and confirm that the file names are not repeated. Your script should also check if such a file does not exist and then use the command “touch” to create it. 
+\\ \textit{\textbf{Expected Output:} A script that can be executed to generate the empty files with a unique name each time it is run.}
+\end{problem}
+\begin{solution}
+
+
+\end{solution} 
+%\noindent\rule{7in}{2.5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}{2}
+There is file by name “figs.tar.gz” in the datasets folder of google drive for this course. Download it to your machine, gunzip and untar it to see a set of folders and sub folders that contain some images. These images have wrong file extensions. Write a script that can be executed from the folder “figs” which will fix the file extensions to have them correctly indicating the type of image file. A list of “mv” commands manually entered is not acceptable.
+\\ \textit{\textbf{Expected Output:} A script that can be executed from the “figs” folder and will generate a text output log about the file extensions being changed and how it is confirmed to be correct after change.}
+\end{problem}
+\begin{solution}
+
+
+\end{solution} 
+
+%\lstinputlisting{HW6Q2.m}
+%\noindent\rule{7in}{2.8pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Problem 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{problem}{3}
+There is a file by name “apache2.tar.gz” in the datasets folder of google drive for this course. Download it
+to your machine, gunzip and untar it to see a set of log files. Each of these files has access log of the apache
+web server in a certain format that includes the IP address of the machine that connected, the date time
+stamp, the URL requested and so on. Using these files, generate a date wise statistics of number of unique IP
+addresses that visited the server. You are welcome to choose a range for the dates that is reasonable as per
+your wish. 
+\\ \textit{\textbf{Expected Output:} A script that can be run in the “apache2” folder and gives a text output that contains two
+columns, namely, the date and the number of unique IP addresses. The script and the output file need to be
+submitted as part of the assignment.}
+\end{problem}
+\begin{solution}
+
+
+\end{solution}
+\end{document}
+ 
