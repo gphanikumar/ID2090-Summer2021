@@ -53,14 +53,14 @@
 \large\textbf{SHINDE SHUBHAM SUNIL} \hfill \textbf{ASSIGNMENT \#2}   \\
 \textbf{smail:} me18b183@smail.iitm.ac.in \hfill \textbf{Roll No.:} ME18B183 \\
 \normalsize\textbf {Course:} ID2090 - Introduction to Scientific Computing \hfill \textbf{Semester:} SUMMER 2021 \\
-\textbf{Instructor:} Prof. Gandham Phanikumar \hfill \textbf{Due Date:} $11^{th}$ July, 2021 \\
+\textbf{Instructor:} Prof. Gandham Phanikumar \hfill \textbf{Due Date:} $17^{th}$ July, 2021 \\
 \noindent\rule{7in}{2.5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Problem 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{problem}{1}
-Write a script that generates a backup filename need to be created by a program with a unique name containing the time stamp when the backup was invoked. Run the script couple of times in quick succession and confirm that the file names are not repeated. Your script should also check if such a file does not exist and then use the command “touch” to create it. 
-\\ \textit{\textbf{Expected Output:} A script that can be executed to generate the empty files with a unique name each time it is run.}
+Use the \$RANDOM shell variable that provides a random number between 0 and 32767 to generate a csv file that will contain marks for a set of 50 students. Scale or use mod operation to get the range correct. The roll number can be a serial number from 1 to 50. The marks in percentage shall be in three columns, namely, Q1 (max 25), Q2 (max 25) and EndSem (max 50). Name this csv file as “marks.csv”. Using a separate script, run through these 50 rows to normalize the marks (topper is scaled to 100) and to assign grades in the following rubric: S for marks $>$90; A for $>$80; B for $>$70; C for $>$60; D for $>$50; E for $>$40 and U for 40 or below. Print the output showing the original mark break up, normalized mark and the grade against each student.\\
+\textit{\textbf{Output Required:} The two codes–one to create the csv and one to analyze it to assign grades; the csv file itself; the output file showing the mark break up, normalized marks and the grades.}
 \end{problem}
 \begin{solution}
 
@@ -68,39 +68,8 @@ Write a script that generates a backup filename need to be created by a program 
 \end{solution} 
 %\noindent\rule{7in}{2.5pt}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Problem 2
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{problem}{2}
-There is file by name “figs.tar.gz” in the datasets folder of google drive for this course. Download it to your machine, gunzip and untar it to see a set of folders and sub folders that contain some images. These images have wrong file extensions. Write a script that can be executed from the folder “figs” which will fix the file extensions to have them correctly indicating the type of image file. A list of “mv” commands manually entered is not acceptable.
-\\ \textit{\textbf{Expected Output:} A script that can be executed from the “figs” folder and will generate a text output log about the file extensions being changed and how it is confirmed to be correct after change.}
-\end{problem}
-\begin{solution}
-
-
-\end{solution} 
-
-%\lstinputlisting{HW6Q2.m}
-%\noindent\rule{7in}{2.8pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Problem 3
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{problem}{3}
-There is a file by name “apache2.tar.gz” in the datasets folder of google drive for this course. Download it
-to your machine, gunzip and untar it to see a set of log files. Each of these files has access log of the apache
-web server in a certain format that includes the IP address of the machine that connected, the date time
-stamp, the URL requested and so on. Using these files, generate a date wise statistics of number of unique IP
-addresses that visited the server. You are welcome to choose a range for the dates that is reasonable as per
-your wish. 
-\\ \textit{\textbf{Expected Output:} A script that can be run in the “apache2” folder and gives a text output that contains two
-columns, namely, the date and the number of unique IP addresses. The script and the output file need to be
-submitted as part of the assignment.}
-\end{problem}
-\begin{solution}
-
-
-\end{solution}
+{\huge \centerline{\ast \ast \textbf{End of Assignment} \ast \ast}}
+\\
 \end{document}
  
