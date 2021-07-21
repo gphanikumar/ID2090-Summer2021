@@ -1,59 +1,16 @@
-\documentclass[a4paper, 11pt]{article}
-\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
-\usepackage{lipsum} %This package just generates Lorem Ipsum filler text. 
-\usepackage{fullpage} % changes the margin
-\usepackage[a4paper, total={7in, 10in}]{geometry}
-\usepackage[fleqn]{amsmath}
-\usepackage{amssymb,amsthm}  % assumes amsmath package installed
-\newtheorem{theorem}{Theorem}
-\newtheorem{corollary}{Corollary}
+\documentclass[a4paper, 12pt]{article}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\setlength{\parindent}{0cm}
 \usepackage{graphicx}
-\usepackage{tikz}
-\usetikzlibrary{arrows}
-\usepackage{verbatim}
-\usepackage[numbered]{mcode}
-\usepackage{float}
-\usepackage{tikz}
-    \usetikzlibrary{shapes,arrows}
-    \usetikzlibrary{arrows,calc,positioning}
-
-    \tikzset{
-        block/.style = {draw, rectangle,
-            minimum height=1cm,
-            minimum width=1.5cm},
-        input/.style = {coordinate,node distance=1cm},
-        output/.style = {coordinate,node distance=4cm},
-        arrow/.style={draw, -latex,node distance=2cm},
-        pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
-        sum/.style = {draw, circle, node distance=1cm},
-    }
-\usepackage{xcolor}
-\usepackage{mdframed}
-\usepackage[shortlabels]{enumitem}
-\usepackage{indentfirst}
-\usepackage{hyperref}
-    
-\renewcommand{\thesubsection}{\thesection.\alph{subsection}}
-
-\newenvironment{The Chaos Theory}[2][\centerline{\huge The Chaos Theory}]
-    { \begin{mdframed}[backgroundcolor=gray!20] \textbf{#1 #2} \\}
-    {  \end{mdframed}}
-
-\renewcommand{\qed}{\quad\qedsymbol}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-%Header-Make sure you update this information!!!!
-\noindent
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large\textbf{SHINDE SHUBHAM SUNIL} \hfill \textbf{ASSIGNMENT \#4}   \\
-\textbf{smail:} me18b183@smail.iitm.ac.in \hfill \textbf{Roll No.:} ME18B183 \\
-\normalsize\textbf {Course:} ID2090 - Introduction to Scientific Computing \hfill \textbf{Semester:} SUMMER 2021 \\
-\textbf{Instructor:} Prof. Gandham Phanikumar \hfill \textbf{Due Date:} $27^{th}$ July, 2021 \\
-\noindent\rule{7in}{2.5pt}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{The Chaos Theory}\\
-\centerline{\textit{-by Robert May, 1975}}
-\end{The Chaos Theory}
+
+\title{\textbf{Assignment \#4}}
+\author{by Shinde Shubham Sunil}
+\date{\today}
+\maketitle
+
+\centerline{\huge \textbf{The Chaos Theory}}
+\centerline{\textit{by Robert May, 1975}}
 \begin{center}
 \centerline{\huge $x_{n+1}=\lambda x_n(1-x_n)$}
 \end{center}
@@ -63,6 +20,6 @@ Where,
     \item $\lambda:$ Growth factor of the dynamic system, $\lambda\in [0,1]$.
     \item $x_n:$ input to the modelled dynamic system, $x_{n}\in[0,1]$.  
 \end{itemize}
-\textbf{Chaos theory} is a branch of mathematics focusing on the study of chaos—\textbf{dynamical systems} whose apparently random states of disorder and irregularities are actually governed by underlying patterns and deterministic laws that are highly sensitive to initial conditions. Chaos theory is an interdisciplinary theory stating that, within the apparent randomness of chaotic complex systems, there are underlying patterns, interconnectedness, constant feedback loops, repetition, self-similarity, fractals, and self-organization. The \textbf{butterfly effect}, an underlying principle of chaos, describes how a small change in one state of a deterministic nonlinear system can result in large differences in a later state (meaning that there is sensitive dependence on initial conditions). A metaphor for this behavior is that a butterfly flapping its wings in Texas can cause a hurricane in China.
+\textbf{Chaos theory} is a branch of physics focusing on the study of chaos—\textbf{dynamical systems} whose apparently random states of disorder and irregularities are actually governed by underlying patterns and deterministic laws that are highly sensitive to initial conditions. Chaos theory is an interdisciplinary theory stating that, within the apparent randomness of chaotic complex systems, there are underlying patterns, interconnectedness, constant feedback loops, repetition, self-similarity, fractals, and self-organization. The \textbf{butterfly effect}, an underlying principle of chaos, describes how a small change in one state of a deterministic nonlinear system can result in large differences in a later state (meaning that there is sensitive dependence on initial conditions). A metaphor for this behavior is that a butterfly flapping its wings in Texas can cause a hurricane in China.
+
 \end{document}
- 
