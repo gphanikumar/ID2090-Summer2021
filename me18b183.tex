@@ -35,13 +35,13 @@
     
 \renewcommand{\thesubsection}{\thesection.\alph{subsection}}
 
-\newenvironment{problem}[2][Problem]
+\newenvironment{The Chaos Theory}[2][\centerline{\huge The Chaos Theory}]
     { \begin{mdframed}[backgroundcolor=gray!20] \textbf{#1 #2} \\}
     {  \end{mdframed}}
 
 % Define solution environment
-\newenvironment{solution}
-    {\textbf{\textit{Solution:}}}
+\newenvironment{info}
+    {\textbf{\textit{Equation:}}}
     {}
 
 \renewcommand{\qed}{\quad\qedsymbol}
@@ -50,26 +50,31 @@
 %Header-Make sure you update this information!!!!
 \noindent
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\large\textbf{SHINDE SHUBHAM SUNIL} \hfill \textbf{ASSIGNMENT \#2}   \\
+\large\textbf{SHINDE SHUBHAM SUNIL} \hfill \textbf{ASSIGNMENT \#4}   \\
 \textbf{smail:} me18b183@smail.iitm.ac.in \hfill \textbf{Roll No.:} ME18B183 \\
 \normalsize\textbf {Course:} ID2090 - Introduction to Scientific Computing \hfill \textbf{Semester:} SUMMER 2021 \\
-\textbf{Instructor:} Prof. Gandham Phanikumar \hfill \textbf{Due Date:} $17^{th}$ July, 2021 \\
+\textbf{Instructor:} Prof. Gandham Phanikumar \hfill \textbf{Due Date:} $27^{th}$ July, 2021 \\
 \noindent\rule{7in}{2.5pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Problem 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{problem}{1}
-Use the \$RANDOM shell variable that provides a random number between 0 and 32767 to generate a csv file that will contain marks for a set of 50 students. Scale or use mod operation to get the range correct. The roll number can be a serial number from 1 to 50. The marks in percentage shall be in three columns, namely, Q1 (max 25), Q2 (max 25) and EndSem (max 50). Name this csv file as “marks.csv”. Using a separate script, run through these 50 rows to normalize the marks (topper is scaled to 100) and to assign grades in the following rubric: S for marks $>$90; A for $>$80; B for $>$70; C for $>$60; D for $>$50; E for $>$40 and U for 40 or below. Print the output showing the original mark break up, normalized mark and the grade against each student.\\
-\textit{\textbf{Output Required:} The two codes–one to create the csv and one to analyze it to assign grades; the csv file itself; the output file showing the mark break up, normalized marks and the grades.}
-\end{problem}
-\begin{solution}
+\begin{The Chaos Theory}\\
+\centerline{\textit{-by Robert May, 1975}}
+\end{The Chaos Theory}
+\begin{center}
+\centerline{\huge $x_{n+1}=\lambda x_n(1-x_n)$}
+\end{center}
+Where,
+\begin{itemize}
+    \item $x_{n+1}:$ outcome of the modelled dynamic system, \textit{for example population growth over time, the flow of water from a faucet, etc.}, $x_{n+1}\in[0,1]$.
+    \item $\lambda:$ Growth factor of the dynamic system, $\lambda\in [0,1]$.
+    \item $x_n:$ input to the modelled dynamic system, $x_{n}\in[0,1]$.  
+\end{itemize}
+\textbf{Chaos theory} is a branch of mathematics focusing on the study of chaos—\textbf{dynamical systems} whose apparently random states of disorder and irregularities are actually governed by underlying patterns and deterministic laws that are highly sensitive to initial conditions. Chaos theory is an interdisciplinary theory stating that, within the apparent randomness of chaotic complex systems, there are underlying patterns, interconnectedness, constant feedback loops, repetition, self-similarity, fractals, and self-organization. The \textbf{butterfly effect}, an underlying principle of chaos, describes how a small change in one state of a deterministic nonlinear system can result in large differences in a later state (meaning that there is sensitive dependence on initial conditions). A metaphor for this behavior is that a butterfly flapping its wings in Texas can cause a hurricane in China.
 
 
-\end{solution} 
+
 %\noindent\rule{7in}{2.5pt}
 
-
-{\huge \centerline{\ast \ast \textbf{End of Assignment} \ast \ast}}
-\\
 \end{document}
  
