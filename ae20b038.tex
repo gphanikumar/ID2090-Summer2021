@@ -1,0 +1,72 @@
+\section*{Introduction to the Friedmann Equations}
+
+The Friedmann equations are a set of equations in physical cosmology that govern the expansion of space in homogeneous and isotropic models of the universe within the context of general relativity. They were first derived by Alexander Friedmann in 1922 from Einstein’s field equations of gravitation. However, we can consider only non-relativistic matter and derive these equations from the Newtonian mechanics as well. These are some of my favourite equations.
+
+
+\section*{The Equations}
+
+\begin{equation}
+    \centering
+    \left(\frac{\Dot{a}}{a}\right)^2 = \frac{8 \pi G \rho}{3} - \frac{kc^2}{a^2}
+\end{equation}
+
+\begin{equation}
+    \frac{\Ddot{a}}{\Dot{a}} = -\frac{4 \pi G}{3}\left(\rho + \frac{3P}{c^2}\right)
+\end{equation}
+
+\section*{Understanding the Equations}
+
+In order to understand each of the terms in the above equations, we need to have a look at the derivation of the first equation.
+
+So let's consider a certain spherical section of the universe of radius 'R'. Since the universe is assumed to be homogeneous and isotropic, it has uniform density $\rho$ (however it may not be constant). This situation can be simplified such that the contents of the sphere are concentrated at the centre as a point mass 'M'.
+
+According to Hubble's law:
+\begin{equation*}
+    \frac{dR}{dt}=HR
+\end{equation*}
+Now calculating the energy interaction of m:
+
+Total energy:
+\begin{equation*}
+    E = U + K = \frac{-4 \pi G \rho mR^2}{3} + \frac{m{HR}^2}{2}
+\end{equation*}
+Therefore,
+
+\begin{equation*}
+    \frac{2E}{mR^2}=H -\frac{8}{3} \pi G \rho
+\end{equation*}
+
+Now we shift to co-moving coordinate system:
+
+\begin{equation*}
+    R(t) = a(t) x
+\end{equation*}
+\begin{equation*}
+     \Dot{R}(t) = \Dot{a}(t) x + a(t) \Dot{x} = \Dot{a}(t) x
+\end{equation*}
+
+Total energy:
+\begin{equation*}
+    E = \frac{-4 \pi G \rho m R^2}{3} + \frac{m \Dot{R}^2}{2} = \frac{-4 \pi G \rho ma^2 x^2}{3} + \frac{m \Dot{a}^2 \Dot{x}^2}{2}
+\end{equation*}
+
+Substitute $k = \frac{-2E}{mx^2c^2}$ and simplify
+
+\begin{equation*}
+    \left(\frac{\Dot{a}}{a}\right)^2 = \frac{8 \pi G \rho}{3} - \frac{kc^2}{a^2}
+\end{equation*}
+
+Assuming a reversible expansion and applying the 1st Law of Thermodynamics we arrive at the fluid equation:
+
+\begin{equation*}
+    \Dot{\rho} + 3\frac{\Dot{a}}{a}\left(\frac{P}{c^2} + \rho\right) = 0
+\end{equation*}
+
+We then use the above equations to arrive at the 2nd equation.
+
+\begin{equation*}
+    \frac{\Ddot{a}}{\Dot{a}} = -\frac{4 \pi G}{3}\left(\rho + \frac{3P}{c^2}\right)
+\end{equation*}
+
+In context to cosmology, First Law of Thermodynamics tells us that, as volume V of universe expands by dV, the pressure P in volume V does the work PdV, which decreases the total energy by that amount. Thus, the Friedmann equations essentially imply conservation of energy.
+
