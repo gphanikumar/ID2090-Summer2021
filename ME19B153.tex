@@ -1,0 +1,103 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+% \usepackage{times}
+\usepackage{setspace}
+\doublespacing
+
+
+
+\usepackage[colorlinks=true,linkcolor=blue, hyperfootnotes=true, urlcolor=blue, citecolor=blue]{hyperref}%
+\usepackage{ntheorem}
+\usepackage{longtable, afterpage}
+\usepackage{mdframed}
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{pdflscape}
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage{url}
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname.\quad}
+\makeatother
+
+\usepackage{sectsty}
+\usepackage{amsmath}
+\subsectionfont{\normalfont\itshape}
+\subsubsectionfont{\normalfont\itshape}
+
+\usepackage{titlesec}
+\setcounter{secnumdepth}{4}
+% \titleformat{\paragraph}
+% {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+% \titlespacing*{\paragraph}{0pt}{4ex plus 0.5ex minus .2ex}{1ex plus .2ex}
+% \titlespacing*{\section}{0pt}{2ex plus 1ex minus .2ex}{1ex plus .2ex}
+% \titlespacing{\section}{0pt}{0.75em}{0.5em}
+% \titlespacing{\subsection}{0pt}{0.25}{0.25em}
+% \titlespacing{\subsubsection}{0pt}{0.25}{0.25em}
+
+
+\usepackage{footmisc}
+\newcommand{\remark}[1]{{\color{red} \large \bf  ~[#1]~}}
+ \setlength{\footnotesep}{0.5\baselineskip}
+\newcommand{\note}[1]{\footnote{\doublespacing #1}}
+\renewcommand{\footnotelayout}{\doublespacing}
+
+\newtheorem{hyp}{Hypothesis}
+\newtheorem{subhyp}{Hypothesis}
+   \renewcommand\thesubhyp{\thehyp\alph{subhyp}}
+\usepackage[natbibapa]{apacite}
+\bibliographystyle{apacite}
+\setlength{\bibsep}{-1pt}
+\setlength{\itemsep}{-1pt}
+\usepackage[affil-it,auth-lg]{authblk}
+
+
+\usepackage{cleveref}
+\usepackage{array}
+
+\usepackage{pgf}
+\usepackage{tikz}
+\usetikzlibrary{arrows,automata}
+\usetikzlibrary{positioning}
+
+\tikzset{
+    state/.style={
+           rectangle,
+           rounded corners,
+           draw=black, very thick,
+           minimum height=2em,
+           inner sep=2pt,
+           text centered,
+           },
+}
+
+
+\usepackage{caption}
+
+
+
+\begin{document}
+\title{Assignment 4}
+\author{Sri Sarada Vyshnavi Putcha }
+\date{July 2021}
+\maketitle
+\section{Favourite physics equation}
+ $-\dfrac{\hslash^2}{2m} \, \dfrac{\partial^2 \psi}{\partial x^2}$ = $i\hslash\dfrac{\partial\psi}{\partial t}$
+\subsection{Description paragraph}
+Asserting the equivalence of these two expressions for energy and putting in the quantum mechanical operators for both brings us to the Schrodinger equation.
+$\psi$ represents wave function.
+\end{document}
