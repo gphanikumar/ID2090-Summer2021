@@ -1,20 +1,56 @@
+\documentclass{article}
 \documentclass[a4paper, 12pt]{article}
 \usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 \setlength{\parindent}{0cm}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
 \begin{document}
 
-\title{Assignment 4}
-\author{ID2090 Students}
-\date{\today}
+\author{Sai Karthik Brahma}
+
+\title{ID2090 Assignment 4}
+
 \maketitle
 
+\begin{abstract}
+This paper consists my favourite equations in Physics.
+\end{abstract}
 \tableofcontents
 
-\section{Introduction}
-Add a line to include your text as illustrated in the comment below.
 
-% \section{ME20B001}
-% \include{me20b001}
+\section{Introduction to the Maxwell's Equations}
+
+Maxwell's Equations are a set of 4 complicated equations that describe the world of electromagnetics. These equations describe how electric and magnetic fields propagate, interact, and how they are influenced by objects.
+
+James Clerk Maxwell genius who took a set of known experimental laws (Faraday's Law, Ampere's Law) and unified them into a set of Equations known as Maxwell's Equations. 
+
+Maxwell was one of the first to determine the speed of propagation of electromagnetic (EM) waves was the same as the speed of light - and hence to conclude that EM waves and visible light were really the same thing.
+
+An important consequence of \href{https://en.wikipedia.org/wiki/Maxwell's_equations} {Maxwell's equations} is that they demonstrate how fluctuating electric and magnetic fields propagate at a constant speed (c) in a vacuum. Known as electromagnetic radiation, these waves may occur at various wavelengths to produce a spectrum of light from radio waves to gamma rays.
+
+
+\subsection{Maxwells Equation's}
+
+Maxwell's Equations are laws - just like the law of gravity. These equations are rules the universe uses to govern the behavior of electric and magnetic fields
+
+
+\begin{equation}
+\Vec{\nabla}.\Vec{E} = \dfrac{\rho}{\epsilon_0}
+\end{equation}
+
+\begin{equation}
+\Vec{\nabla}.\Vec{B} = 0
+\end{equation}
+
+\begin{equation}
+\vec{\nabla}.\times\vec{E} = -\dfrac{\partial B}{\partial t}
+\end{equation}
+
+\begin{equation}
+\vec{\nabla}.\times\vec{B} = \mu_0\vec{J} + \dfrac{1}{c^2}\dfrac{\partial E}{\partial t}
+\end{equation}
+
 
 \end{document}
